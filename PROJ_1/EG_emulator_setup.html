@@ -19,6 +19,8 @@
         .img:hover {
             transform: scale(1.2);
             cursor: pointer;
+            box-shadow: 0px 0px 36px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
         }
 
         .td {
@@ -37,6 +39,20 @@
             color: black;
             background-color: aliceblue;
         }
+
+        .table:hover,.td:hover,.td1:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 15px cyan;
+        }
+
+      .form{
+      transition: transform 0.3s ease;
+      }
+     .form:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 0px 30px rgb(201, 2, 245),
+              0px 0px 15px rgb(201, 2, 245) inset;
+     }
     </style>
 </head>
 
@@ -47,7 +63,7 @@
             style="border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); border-radius: 30px; background-attachment: fixed;">
             <br>
             <h1 style="color: white;"><b>
-                    <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="imgs1">
+                    <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form">
                     LOKI_EMULATOR_SETUP</b>
             </h1>
             <br>
@@ -73,11 +89,11 @@
                     <td class="td"><a href="SETUP/athersx2.html" style="text-decoration: none;color: rgb(255, 255, 255);"><img src="image/ps2.webp" id="aps2" class="img" title="ATHERSX2"><h2 class="h2t"><<<  SET UP  >>></h2><h3>click here...</h3></a></td>
                     <td><pre>        </pre>
             </td>
-            <td class="td"><img src="image/pcsx2.png" id="pps2" class="img" title="PCSX2">
+            <td class="td"><a href="SETUP/pcsx2.html" style="text-decoration: none; color: aliceblue;" ><img src="image/pcsx2.png" id="pps2" class="img" title="PCSX2">
                 <h2 class="h2t">
                     <<< SET UP>>>
                 </h2>
-                <h3>click here...</h3>
+                <h3>click here...</h3></a>
             </td>
             </td>
             <td>
@@ -95,11 +111,11 @@
                 <td><br></td>
             </tr>
             <tr>
-                <td class="td"><img src="image/PS3.jpg" id="rpcs3" class="img" title="RPCS3">
+                <td class="td"><a href="SETUP/rpcs3.html" style="text-decoration: none;color: white;"><img src="image/PS3.jpg" id="rpcs3" class="img" title="RPCS3">
                     <h2 class="h2t">
                         <<< SET UP>>>
                     </h2>
-                    <h3>click here...</h3>
+                    <h3>click here...</h3></a>
                 </td>
                 <td>
                     <pre>        </pre>
@@ -165,44 +181,44 @@
         style="border-radius: 30px; background-image: url(image/background3.avif); border: 2px solid black; background-attachment: fixed;">
         <center>
             <h2 style="color: rgb(0, 0, 0);">
-                <table style="border: 2px dashed; border-radius: 15px;" width="80%">
+                <table style="border: 2px dashed; border-radius: 15px;" width="80%" class="table">
                     <h2>EMULATORS LISTS...</h2>
                     <tbody>
                         <tr>
                             <ul>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#aps2" style="text-decoration: none;"> ATHERSX2 (PS2)</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#pps2" style="text-decoration: none;"> PCSX2 (PS2)</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#psp" style="text-decoration: none;"> PPSSPP (PSP)</a></li>
                                 </td>
                             </ul>
                         </tr>
                         <tr>
                             <ul>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#rpcs3" style="text-decoration: none;"> RPCS3 (PS3)</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#apcs3" style="text-decoration: none;"> APCS3 (PS3)</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#xbox" style="text-decoration: none;"> XBOX 360</a></li>
                                 </td>
                             </ul>
                         </tr>
                         <tr>
                             <ul>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#ns" style="text-decoration: none;"> NITENDO SWITCH</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#none1" style="text-decoration: none;"> COMING SOON..</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#none2" style="text-decoration: none;"> COMING SOON..</a></li>
                                 </td>
                             </ul>
