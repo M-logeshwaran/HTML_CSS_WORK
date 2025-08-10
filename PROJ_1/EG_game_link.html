@@ -13,7 +13,48 @@
         .form:hover {
             transform: scale(1.2);
             cursor: pointer;
+            box-shadow: 0px 0px 30px rgb(0, 0, 0),
+                        0px 0px 15px rgb(0, 0, 0) inset;
         }
+
+        .form2 {
+            transition: transform 0.3s ease;
+        }
+
+        .form2:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            box-shadow: 0px 0px 30px rgb(255, 255, 255),
+                        0px 0px 15px rgb(255, 255, 255) inset;
+        }
+
+        .form1 {
+            transition: transform 0.3s ease;
+        }
+
+        .form1:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            box-shadow: 0px 0px 30px rgb(201, 2, 245),
+                        0px 0px 15px rgb(201, 2, 245) inset;
+        }
+
+        .table,.td{
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .table:hover,.td:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            box-shadow: 0px 0px 20px cyan; 
+        }
+
+        .table1:hover,.td1:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 20px cyan; 
+        }
+
     </style>
 </head>
 
@@ -25,7 +66,7 @@
         <center>
             <br>
             <h1 style="color: white;"><b>
-                    <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form">
+                    <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form1">
                     LOKI.EMULATION.com</b>
             </h1>
             <br>
@@ -59,7 +100,7 @@
                         <center>
                             <br>
                             <img src="image/gow1.jpg" height="300px" width="300px" alt="GOD OF WAR 1" title="GOW1"
-                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 1" class="form">
+                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 1" class="form2">
                             <h2>GOD OF WAR 1</h2>
                             <p>God of War is a 2005 action-adventure game developed by Santa Monica Studio and published
                                 by Sony Computer Entertainment (SCE). First released for the PlayStation 2 on March 22,
@@ -74,30 +115,30 @@
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOD OF WAR 1</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow1.html"
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOD OF WAR 1</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow1.html"
                                                 style="color: rgb(208, 255, 0);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">ATHERSX2 (mobile)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">ATHERSX2 (mobile)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://en.softonic.com/download/aethersx2/android/post-download/v/v1.5-4248?dt=internalDownload"
                                                 target="_blank" style="color: rgb(208, 255, 0);"> Download Link2..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PCSX2 (pc)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PCSX2 (pc)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://github.com/PCSX2/pcsx2/releases/download/v2.4.0/pcsx2-v2.4.0-windows-x64-Qt.7z"
                                                 target="_blank" style="color: rgb(208, 255, 0);"> Download Link3..</a>
                                         </td>
@@ -137,30 +178,30 @@
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOD OF WAR 2</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow2.html"
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOD OF WAR 2</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow2.html"
                                                 style="color: rgb(0, 110, 255);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">ATHERSX2 (mobile)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">ATHERSX2 (mobile)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://en.softonic.com/download/aethersx2/android/post-download/v/v1.5-4248?dt=internalDownload"
                                                 target="_blank" style="color: rgb(0, 102, 255);"> Download Link2..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PCSX2 (pc)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PCSX2 (pc)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://github.com/PCSX2/pcsx2/releases/download/v2.4.0/pcsx2-v2.4.0-windows-x64-Qt.7z"
                                                 target="_blank" style="color: rgb(0, 110, 255);"> Download Link3..</a>
                                         </td>
@@ -185,7 +226,7 @@
                         <center>
                             <br>
                             <img src="image/GOW3.avif" height="300px" width="300px" alt="GOD OF WAR 3" title="GOW3"
-                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 3" class="form">
+                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 3" class="form2">
                             <h2>GOD OF WAR 3</h2>
                             <p>God of War III is a 2010 action-adventure game developed by Santa Monica Studio and
                                 published by Sony Computer Entertainment. First released for the PlayStation 3 on March
@@ -201,30 +242,30 @@
                                 Olympian gods to have his revenge.<a href="https://en.wikipedia.org/wiki/God_of_War_III"
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOD OF WAR 3</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow3.html"
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOD OF WAR 3</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow3.html"
                                                 style="color: rgb(208, 255, 0);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">RPCS3 (mobile)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">RPCS3 (mobile)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://github.com/RPCS3-Android/rpcs3-android/releases/download/alpha-7/rpcs3-release.apk"
                                                 target="_blank" style="color: rgb(238, 255, 0);"> Download Link2..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">RPCS3 (pc)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">RPCS3 (pc)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-9c93ec0bc31bbc94ca4dce2a76ceea80da6f6554/rpcs3-v0.0.37-18022-9c93ec0b_win64_msvc.7z"
                                                 target="_blank" style="color: rgb(229, 255, 0);"> Download Link3..</a>
                                         </td>
@@ -251,7 +292,7 @@
                             <br>
                             <img src="image/gow_chain.jpg" height="300px" width="300px"
                                 alt="GOD OF WAR CHAINS OF OLYMPUS" title="GOW_CH"
-                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR CH" class="form">
+                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR CH" class="form" class="table">
                             <h2>GOD OF WAR CHAINS OF OLYMPUS</h2>
                             <p>God of War: Chains of Olympus is a 2008 action-adventure game developed by Ready at Dawn,
                                 and published by Sony Computer Entertainment (SCE). It was first released for the
@@ -268,30 +309,30 @@
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOW_CHAIN OF OLYMPUS</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow_ch.html"
-                                                style="color: rgb(2, 175, 255);"> Download Link1..</a></td>
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOW_CHAIN OF OLYMPUS</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow_ch.html"
+                                                style="color: rgb(2, 175, 255);" > Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">PPSSPP (mobile)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">PPSSPP (mobile)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
                                                 target="_blank" style="color: rgb(0, 195, 255);"> Download Link2..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PPSSPP (pc)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PPSSPP (pc)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://www.ppsspp.org/files/1_19_3/PPSSPPSetup.exe"
                                                 target="_blank" style="color: rgb(0, 183, 255);"> Download Link3..</a>
                                         </td>
@@ -317,7 +358,7 @@
                             <br>
                             <img src="image/God_of_War_Ghost_of_Sparta.webp" height="300px" width="300px"
                                 alt="GOD OF WAR GHOST OF SPARTA" title="GOW_GOS"
-                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR GOS" class="form">
+                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR GOS" class="form2">
                             <h2>GOD OF WAR GHOST OF SPARTA</h2>
                             <p>God of War: Ghost of Sparta is a 2010 action-adventure game developed by Ready at Dawn
                                 and published by Sony Computer Entertainment (SCE). It was first released for the
@@ -333,30 +374,30 @@
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOW_GHOST OF SPARTA</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow_ghost.html"
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOW_GHOST OF SPARTA</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow_ghost.html"
                                                 style="color: rgb(255, 251, 0);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">PPSSPP (mobile)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">PPSSPP (mobile)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
                                                 target="_blank" style="color: rgb(229, 255, 0);"> Download Link2..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PPSSPP (pc)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PPSSPP (pc)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://www.ppsspp.org/files/1_19_3/PPSSPPSetup.exe"
                                                 target="_blank" style="color: rgb(255, 238, 0);"> Download Link3..</a>
                                         </td>
@@ -381,7 +422,7 @@
                         <center>
                             <br>
                             <img src="image/gow_ascension.jpg" height="300px" width="300px" alt="GOD OF WAR 3"
-                                title="GOW_ASC" style="border: 2px solid; border-radius: 15px;" id="GOD OF WAR asc"
+                                title="GOW_ASC" style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR asc"
                                 class="form">
                             <h2>GOD OF WAR ASCENSION</h2>
                             <p>God of War: Ascension is a 2013 action-adventure game developed by Santa Monica Studio
@@ -397,30 +438,30 @@
                                 of his bond to Ares.<a href="https://en.wikipedia.org/wiki/God_of_War:_Ascension"
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
-                            <table style="border: 1px solid;" height="150px" width="500px">
+                            <table style="border: 2px solid;border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOD OF WAR ASCENSION</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow_asc.html"
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOD OF WAR ASCENSION</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow_asc.html"
                                                 style="color: rgb(0, 162, 255);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">RPCS3 (mobile)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">RPCS3 (mobile)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://github.com/RPCS3-Android/rpcs3-android/releases/download/alpha-7/rpcs3-release.apk"
                                                 target="_blank" style="color: rgb(0, 153, 255);"> Download Link2..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">RPCS3 (pc)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">RPCS3 (pc)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-9c93ec0bc31bbc94ca4dce2a76ceea80da6f6554/rpcs3-v0.0.37-18022-9c93ec0b_win64_msvc.7z"
                                                 target="_blank" style="color: rgb(0, 153, 255);"> Download Link3..</a>
                                         </td>
@@ -447,7 +488,7 @@
                         <center>
                             <br>
                             <img src="image/god-of-war.jpg" height="300px" width="300px" alt="GOD OF WAR" title="GOW"
-                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR" class="form">
+                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR" class="form2">
                             <h2>GOD OF WAR</h2>
                             <p>God of War is an action-adventure game franchise created by David Jaffe and developed by
                                 Sony's Santa Monica Studio. It began in 2005 on the PlayStation 2 (PS2) video game
@@ -463,27 +504,27 @@
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GOD OF WAR</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow.html"
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GOD OF WAR</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow.html"
                                                 style="color: rgb(208, 255, 0);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">NO EMULATOR (MOBILE)</td>
-                                        <td style="border: 1px solid; color: rgb(208, 255, 0);">----------</td>
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">NO EMULATOR (MOBILE)</td>
+                                        <td style="border: 1px solid; color: rgb(208, 255, 0);" class="td"></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PC VERSION (available)</td>
-                                        <td style="border: 1px solid"><a href="GAMES/gow.html"
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PC VERSION (available)</td>
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/gow.html"
                                                 target="_blank" style="color: rgb(208, 255, 0);"> Download Link3..</a>
                                         </td>
                                     </tr>
@@ -523,29 +564,29 @@
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid;  border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid;  border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">SPIDER MAN REMASTERED</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">SPIDER MAN REMASTERED</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="GAMES/spiderman.html"
-                                                style="color: rgb(0, 110, 255);"> Download Link1..</a>
+                                                style="color: rgb(0, 110, 255);" class="td"> Download Link1..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">NO EMULATOR (MOBILE)</td>
-                                        <td style="border: 1px solid ; color : rgb(0, 102, 255);">----------</td>
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">NO EMULATOR (MOBILE)</td>
+                                        <td style="border: 1px solid ; color : rgb(0, 102, 255);" class="td"></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PC VERSION (available)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PC VERSION (available)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="GAMES/spiderman.html"
                                                 style="color: rgb(0, 110, 255);"> Download Link3..</a>
                                         </td>
@@ -571,7 +612,7 @@
                             <br>
                             <img src="image/Ghost_of_Tsushima.jpg" height="300px" width="300px" alt="GHOST OF TSUSHIMA"
                                 title="GHOST OF TSUSHIMA" style="border: 1px solid; border-radius: 15px;"
-                                id="GHOST OF TSUSHIMA" class="form">
+                                id="GHOST OF TSUSHIMA" class="form2">
                             <h2>GHOST OF TSUSHIMA</h2>
                             <p>Ghost of Tsushima is a 2020 action-adventure game developed by Sucker Punch Productions
                                 and published by Sony Interactive Entertainment. The player controls Jin Sakai, a
@@ -585,29 +626,29 @@
                                 separately in September 2021.<a href="https://en.wikipedia.org/wiki/Ghost_of_Tsushima"
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px">
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
                                 <h2>Download links..</h2>
                                 <tbody>
                                     <tr>
-                                        <td style="border: 1px solid">1.</td>
-                                        <td style="border: 1px solid">NAME</td>
-                                        <td style="border: 1px solid">GHOST OF TSUSHIMA</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">1.</td>
+                                        <td style="border: 1px solid" class="td">NAME</td>
+                                        <td style="border: 1px solid" class="td">GHOST OF TSUSHIMA</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="GAMES/ghost_of_tsh.html"
                                                 style="color: rgb(208, 255, 0);"> Download Link1..</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">2.</td>
-                                        <td style="border: 1px solid">EMULATOR 1</td>
-                                        <td style="border: 1px solid">NO EMULATOR (MOBILE)</td>
-                                        <td style="border: 1px solid; color: rgb(238, 255, 0);">----------</td>
+                                        <td style="border: 1px solid" class="td">2.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 1</td>
+                                        <td style="border: 1px solid" class="td">NO EMULATOR (MOBILE)</td>
+                                        <td style="border: 1px solid; color: rgb(238, 255, 0);" class="td"></td>
                                     </tr>
                                     <tr>
-                                        <td style="border: 1px solid">3.</td>
-                                        <td style="border: 1px solid">EMULATOR 2</td>
-                                        <td style="border: 1px solid">PC VERSION (available)</td>
-                                        <td style="border: 1px solid"><a
+                                        <td style="border: 1px solid" class="td">3.</td>
+                                        <td style="border: 1px solid" class="td">EMULATOR 2</td>
+                                        <td style="border: 1px solid" class="td">PC VERSION (available)</td>
+                                        <td style="border: 1px solid" class="td"><a
                                                 href="GAMES/ghost_of_tsh.html"
                                                 style="color: rgb(229, 255, 0);"> Download Link3..</a>
                                         </td>
@@ -629,46 +670,46 @@
         style="border-radius: 30px; background-image: url(image/background3.avif); border: 2px solid black; background-attachment: fixed;">
         <center>
             <h2 style="color: rgb(0, 0, 0);">
-                <table style="border: 2px dashed; border-radius: 15px;" width="80%">
+                <table style="border: 2px dashed; border-radius: 15px;" width="80%" class="table1">
                     <h2>GAME LISTS...</h2>
                     <tbody>
                         <tr>
                             <ul>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR 1" style="text-decoration: none;"> GOD OF WAR 1</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR 2" style="text-decoration: none;"> GOD OF WAR 2</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR 3" style="text-decoration: none;"> GOD OF WAR 3</a></li>
                                 </td>
                             </ul>
                         </tr>
                         <tr>
                             <ul>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR CH" style="text-decoration: none;"> GOW CHAINS OF
                                             OLYMPUS</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR GOS" style="text-decoration: none;"> GOW GHOST OF
                                             SPARTA</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR asc" style="text-decoration: none;"> GOW ASCENSION</a></li>
                                 </td>
                             </ul>
                         </tr>
                         <tr>
                             <ul>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GOD OF WAR" style="text-decoration: none;"> GOD OF WAR</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#SPIDER MAN" style="text-decoration: none;"> SPIDER MAN</a></li>
                                 </td>
-                                <td style="border: 1px solid; border-radius: 30px;">
+                                <td style="border: 1px solid; border-radius: 30px;" class="td1">
                                     <li><a href="#GHOST OF TSUSHIMA" style="text-decoration: none;"> GHOST OF
                                             TSUSHIMA</a></li>
                                 </td>
@@ -689,7 +730,7 @@
         <br><br>
         <h1>Follow Me on..</h1>
 
-        <td><img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form"></td>
+        <td><img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form1"></td>
         <td>
             <pre><h2>---------------------------</h2><h2><a href="https://github.com/M-logeshwaran" style="color: aliceblue;" target="_blank">Loki.Github.com</a></h2><h2>---------------------------</h2></pre>
         </td>
