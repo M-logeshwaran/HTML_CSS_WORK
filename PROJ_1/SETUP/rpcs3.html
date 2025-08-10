@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Loki.RPCS3.com</title>
+  <link rel="icon" href="../image/me.jpg" style="height: 150px; width: 150px; border-radius: 50%;">
+  <style>
+    .tdd {
+      border: 2px solid white;
+      background-image: url(../image/background4.jpg);
+      background-attachment: fixed;
+      text-align: center;
+      width: 60%;
+      border-radius: 30px;
+    }
+    .form{
+      transition: transform 0.3s ease;
+    }
+    .form:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 0px 30px rgb(201, 2, 245),
+              0px 0px 15px rgb(201, 2, 245) inset;
+    }
+    .itd1 {
+      padding: 20px;
+      border: 1px solid white;
+      transition: transform 0.3s ease;
+    }
+    .itd2 {
+      padding: 20px;
+      border: 1px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .itd1:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(255, 157, 0),
+                  0px 0px 15px rgb(255, 174, 0) inset;
+    }
+
+    .itd2:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(38, 255, 0),
+                  0px 0px 15px rgb(55, 255, 0) inset;
+    }
+
+    .itd3 {
+      padding: 20px;
+      border: 1px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .itd3:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
+    }
+
+    .itable {
+      text-align: center;
+      border-radius: 30px;
+      border: 1px solid white;
+      border-width: 80%;
+      width: 80%;
+      transition: transform 0.3s ease;
+    }
+
+    .button {
+      width: 300px;
+      height: 50px;
+      font-size: larger;
+      background-color: rgb(255, 238, 0);
+      border-radius: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      transition: transform 0.3s ease;
+    }
+
+    .itable1 {
+      text-align: center;
+      border-radius: 30px;
+      border: 1px solid white;
+      border-width: 80%;
+      width: 80%;
+      transition: transform 0.3s ease;
+    }
+
+    .itable2 {
+      text-align: center;
+      border-radius: 30px;
+      border: 1px solid white;
+      border-width: 80%;
+      width: 80%;
+      transition: transform 0.3s ease;
+    }
+
+    .img {
+      border: 2px solid white;
+      width: 500px;
+      height: 500px;
+      border-radius: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .img:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 36px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
+    }
+    .itable:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
+    }
+    .img2:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    .img1:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(4, 226, 255),
+                  0px 0px 15px rgb(0, 225, 255) inset;
+    }
+
+    .itable1:hover {
+      transform: scale(1.2);
+      color: rgb(255, 128, 0);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(255, 157, 0),
+                  0px 0px 15px rgb(255, 174, 0) inset;
+    }
+
+    .itable2:hover {
+      transform: scale(1.2);
+      color: #00ff1e;
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(38, 255, 0),
+                  0px 0px 15px rgb(55, 255, 0) inset;
+    }
+
+    .button:hover {
+      transform: scale(1.2);
+      background-color: rgb(33, 255, 4);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(38, 255, 0),
+                  0px 0px 15px rgb(55, 255, 0) inset;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      color: rgb(255, 255, 255);
+    }
+
+    .c1 {
+      background-image: url(../image/background4.jpg);
+      background-attachment: fixed;
+      border: 2px solid white;
+      border-radius: 30px;
+      width: 40%;
+      padding: 16px;
+    }
+
+    .container1 {
+      display: flex;
+      background-image: url(../image/background4.jpg);
+      background-attachment: fixed;
+      border: #ffffff 2px solid;
+      border-radius: 30px;
+    }
+
+    .c2 {
+      width: 1000px;
+      margin: 3% 0% 3% 15%;
+    }
+
+    .img1 {
+      transition: transform 0.3s ease;
+    }
+    .img2 {
+      transition: transform 0.3s ease;
+    }
+
+    .video {
+      transition: transform 0.3s ease;
+      box-shadow: 0px 0px 30px rgb(255, 157, 0),
+        0px 0px 15px rgb(255, 157, 0) inset;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <body style="text-align: center; background-image: url(../image/background2.jpg); background-attachment: fixed;">
+    <div class="head">
+      <fieldset
+        style="border-radius: 30px; padding: 5px; background-image: url(../image/background1.jpg); background-attachment: fixed; position: sticky; top: 0px;">
+        <center>
+          <br>
+          <h1 style="color: white;"><b>
+              <img src="../image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form">
+              LOKI_SETUP_com</b>
+          </h1>
+          <br>
+        </center>
+      </fieldset>
+      <br>
+    </div>
+
+
+    <br>
+
+
+    <center>
+      <table width="80%">
+        <tbody style="color: aliceblue;">
+          <tr>
+            <td><img src="../image/PS3.jpg" class="img" title="RPCS3"></td>
+            <td class="tdd">
+              <h1> RPCS3 </h1>
+              <h2>
+                <center>
+                  <table class="itable">
+                    <tbody>
+                      <tr>
+                        <td class="itd3" style="border-radius: 30px 30px 0px 0px;">CONSOLE</td>
+                        <td class="itd3" style="border-radius: 30px 30px 0px 0px;;">PS3</td>
+                      </tr>
+                      <tr>
+                        <td class="itd3">PUBLISHER</td>
+                        <td class="itd3">OPEN SOURCE</td>
+                      </tr>
+                      <tr>
+                        <td class="itd3">DEVELOPER</td>
+                        <td class="itd3">RPCS3 TEAM</td>
+                      </tr>
+                      <tr>
+                        <td class="itd3">SIZE</td>
+                        <td class="itd3">33.4 MB</td>
+                      </tr>
+                      <tr>
+                        <td class="itd3">RELESED</td>
+                        <td class="itd3"> AUGUST 16, 2024</td>
+                      </tr>
+                      <tr>
+                        <td class="itd3" style="border-radius: 0px 0px 30px 30px;">VERSION</td>
+                        <td class="itd3" style="border-radius: 0px 0px 30px 30px;"> 0.0.32-16834 ALPHA </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <a href="rpcs3-v0.0.37-18022-9c93ec0b_win64_msvc.7z"
+                    style="text-decoration: none;"><button class="button">Download Here..</button></a>
+                </center>
+              </h2>
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+
+
+    <br>
+    <div
+      style="background-image: url(../image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px; position: sticky;top: 0px;">
+      <h1> >>> REQUIREMENTS </h1>
+    </div>
+    <br>
+
+
+    <div class="container" style="color: #ffffff;">
+      <div class="c1">
+        <center>
+          <h2> MINIMUM REQUIREMENTS : </h2>
+          <table class="itable1">
+            <tbody>
+              <h2>
+                <tr>
+                  <td class="itd1" style="border-radius: 30px 30px 0px 0px;"> PROCESSOR (INTEL) </td>
+                  <td class="itd1" style="border-radius: 30px 30px 0px 0px;"> INTEL CORE i3-4150 </td>
+                </tr>
+                <tr>
+                  <td class="itd1">PROCESSOR (AMD)</td>
+                  <td class="itd1"> AMD PHENOM II X4 945  </td>
+                </tr>
+                <tr>
+                  <td class="itd1">RAM</td>
+                  <td class="itd1"> 4 GB</td>
+                </tr>
+                <tr>
+                  <td class="itd1">WINDOWS VERSION</td>
+                  <td class="itd1"> 10 & (ABOVE)</td>
+                </tr>
+                <tr>
+                  <td class="itd1" style="border-radius: 0px 0px 30px 30px;"> STORAGE </td>
+                  <td class="itd1" style="border-radius: 0px 0px 30px 30px;"> 256 GB </td>
+                </tr>
+            </tbody>
+          </table>
+          <br><br>
+        </center>
+      </div>
+      <div class="c1">
+        <center>
+          <h2>RECOMMENDED REQUIREMENTS :</h2>
+          <table class="itable2">
+            <tbody>
+              <h2>
+                <tr>
+                  <td class="itd2" style="border-radius: 30px 30px 0px 0px;">PROCESSOR (INTEL)</td>
+                  <td class="itd2" style="border-radius: 30px 30px 0px 0px;"> INTEL CORE i5-4460 or NEWER CHIP</td>
+                </tr>
+                <tr>
+                  <td class="itd2">PROCESSOR (AMD)</td>
+                  <td class="itd2">AMD RYZEN 3 2200G</td>
+                </tr>
+                <tr>
+                  <td class="itd2">RAM</td>
+                  <td class="itd2"> 8 GB</td>
+                </tr>
+                <tr>
+                  <td class="itd2">ANDROID VERSION</td>
+                  <td class="itd2"> 10 & (ABOVE) </td>
+                </tr>
+                <tr>
+                  <td class="itd2" style="border-radius: 0px 0px 30px 30px;">STORAGE</td>
+                  <td class="itd2" style="border-radius: 0px 0px 30px 30px;"> 256 GB </td>
+                </tr>
+            </tbody>
+          </table>
+          <br><br>
+        </center>
+      </div>
+    </div>
+
+
+    <br>
+    <div
+      style="background-image: url(../image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px; position: sticky;top: 0px; z-index: 1;">
+      <h1>>>> BIOS (MUST DOWNLOAD) </h1>
+    </div>
+    <br>
+
+
+    <div class="container1" style="flex-wrap: wrap;">
+      <div>
+        <img class="img2" src="image/ps2_bios.webp" title="PLAYSTATION" style="width:400px;height:400px;margin: 40% 0% 0% 20%;">
+      </div>
+      <div class="c2">
+        <h1 style="color: #ffffff;">AETHERSX2 AND BIOS FILES :</h1>
+        <br>
+        <h2 style="text-align: center; color: #ffffff;font-family: Georgia, 'Times New Roman', Times, serifd;"> *
+          PCSX2 is a PS2 emulator that allows you to play PS2 games on various devices, including Android, iOS,
+          Windows, Mac, and Linux. To function correctly, it requires the PlayStation 2's BIOS files, which act as the
+          console's "brain" and are essential for the emulator to mimic the PS2's behavior.</h2>
+        <br>
+        <h1 style="color: #ffffff;">LEGALITY OF DOWNLOADING BIOS :</h1>
+        <br>
+        <h2 style="text-align: center; color: #ffffff;font-family: Georgia, 'Times New Roman', Times, serifd;"> * It is
+          illegal to download the PlayStation 2 BIOS from online sources unless it's extracted from a PS2 console that
+          you own. Downloading from unauthorized sources not only violates copyright law but also poses a risk of
+          malware or corrupted files.</h2>
+        <br>
+        <a href="ps2-bios-all-bios.zip" style="text-decoration: none;"><button class="button">Download
+            Here..</button></a>
+      </div>
+
+    </div>
+
+    <br>
+    <div
+      style="background-image: url(../image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px; position: sticky;top: 0px; z-index: 1;">
+      <h1>>>> SETUP DETAILS </h1>
+    </div>
+    <br>
+
+
+    <div class="container1" style="justify-content: space-evenly;flex-wrap: wrap;padding: 2%;">
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP-1 : CHECK SYSTEM REQUIREMENTS</h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Make sure your system meets at least the minimum requirements. What's especially important is having a decent CPU since PCSX2 is more CPU-bound than GPU-bound.</li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP-2 : DOWNLOAD PCSX2</h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Head over to the official PCSX2 website and grab the latest stable release (2.4.0 as of June 29, 2025) for Windows, Linux, or macOS.  (we provide only for Windows) </li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP 3: INSTAL REQUIRED DEPENDENCIES</h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Visual C++ Redistributable (x64) — essential for Windows.
+          </li>
+          <li>FFmpeg libraries (optional) — required for video capture features.</li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP 4: INSTAL or EXTRACT PCSX2</h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Installer version: Run the EXE and follow the wizard.</li>
+          <li> Portable version: Extract the .zip/.7z file using 7-Zip and place it in a convenient folder.</li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP 5: OBTAIN PS2 BIOS</h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> You must supply a legitimate PlayStation 2 BIOS (dumped from your own console). Place the BIOS files into PCSX2’s BIOS folder. or use our BIOS (trusted) </li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP 6: FIRST-TIME CONFIGURATION </h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Run PCSX2 to start the setup wizard:</li>
+          <li> Choose theme and update preferences.</li>
+          <li> select your BIOS image (e.g., USA, Europe).</li>
+          <li> Set your game directory.</li>
+          <li> Configure your input device (keyboard or gamepad).</li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP 7: CONFIGURE ESSENTIAL SETTINGS (Recommended) </h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Enable the toolbar for quick access (View > Toolbar).</li>
+          <li> Set up memory cards (Create → Folder recommended for unlimited save capacity).</li>
+          <li> Adjust graphics settings (e.g., internal resolution upscale, anisotropic filtering).</li>
+          <li> Set fast-forward speed under Emulation settings.</li>
+          <li> Map screenshot hotkey (e.g., F8 saves screenshot to snaps folder).</li>
+        </ol>
+      </div>
+      <div class="img1"
+        style="text-align: center;color: #000000;width: 40%;border: 1px solid rgb(0, 0, 0);border-radius: 30px;margin: 2%;background-image: url(../image/background3.avif);background-attachment: fixed;">
+        <h1> STEP 8: LOAD and PLAY GAMES !</h1>
+        <ol style="text-align: justify;font-size: larger;">
+          <li> Either use System → Start Disc if using a physical PS2 disc,</li>
+          <li> Or Add Game Directory → scan for ISOs or CHDs and launch games directly from the game list.</li>
+        </ol>
+      </div>
+    </div>
+
+    <br>
+    <div
+      style="background-image: url(../image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px; position: sticky;top: 0px; z-index: 1;">
+      <h1>>>> SETUP VIDEO </h1>
+    </div>
+    <br>
+    <div
+      style="border: 1px solid white;border-radius: 30px; width: 50%;position: relative;left: 25%; overflow-x: scroll; scrollbar-width: none;z-index: 5;" class="video">
+      <iframe width="935" height="415" style="border-radius: 30px;"
+        src="https://www.youtube.com/embed/N7TUfukBwCM?si=psJ4etLfs9ZOoXqG"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+
+    <center>
+      <fieldset
+        style="color: aliceblue; background-image: url(../image/background1.jpg); background-size: cover; border-radius: 30px; padding: 5px; background-attachment: fixed;">
+        <br><br><br><br><br>
+        <h1>--- Thank You For Visiting ---</h1><br><br>
+        <hr>
+        <div>
+          <table style="text-align: center;" width="60%">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Return..</h2>
+                </td>
+                <td>
+                  <h2>Follow Me on..</h2>
+                </td>
+                <td>
+                  <h2>Contact..</h2>
+                </td>
+                <td>
+                  <h2>Email..</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3><a href="../EG_emulator_setup.html" style="color: aliceblue;">EMULATOR PAGE</a></h3>
+                </td>
+                <td>
+                  <h3><a href="https://github.com/M-logeshwaran" style="color: aliceblue;"
+                      target="_blank">Loki.Github.com</a></h3>
+                </td>
+                <td>
+                  <h3>+91 6382117611 </h3>
+                </td>
+                <td>
+                  <h3><a href="mailto: mg.logesh458@gmail.com" style="color: aliceblue;">Email me..</a></h3>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr><br><br><br><br><br><br>
+      </fieldset>
+    </center>
+  </body>
