@@ -15,9 +15,46 @@
       border-radius: 30px;
     }
 
-    .itd {
+    .form{
+      transition: transform 0.3s ease;
+    }
+    .form:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 0px 30px rgb(201, 2, 245),
+              0px 0px 15px rgb(201, 2, 245) inset;
+    }
+
+    .itd1 {
       padding: 20px;
       border: 1px solid white;
+    }
+    .itd2 {
+      padding: 20px;
+      border: 1px solid white;
+    }
+
+    .itd1:hover{
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(255, 157, 0),
+                  0px 0px 15px rgb(255, 174, 0) inset;
+    }
+
+    .itd2:hover{
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(38, 255, 0),
+                  0px 0px 15px rgb(55, 255, 0) inset;
+    }
+
+    .itd3 {
+      padding: 20px;
+      border: 1px solid white;
+    }
+
+    .itd3:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
     }
 
     .itable {
@@ -39,7 +76,7 @@
       transition: transform 0.3s ease;
     }
 
-    .itable1 {
+    .itable1{
       text-align: center;
       border-radius: 30px;
       border: 1px solid white;
@@ -48,13 +85,17 @@
       transition: transform 0.3s ease;
     }
 
-    .itable2 {
+    .itable2{
       text-align: center;
       border-radius: 30px;
       border: 1px solid white;
       border-width: 80%;
       width: 80%;
       transition: transform 0.3s ease;
+    }
+
+    .itd2,.itd1,.itd3 {
+       transition: transform 0.3s ease;
     }
 
     .img {
@@ -65,29 +106,51 @@
       transition: transform 0.3s ease;
     }
 
-    .img:hover,
-    .itable:hover,
-    .img1:hover {
+    .img:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 36px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
+    }
+    .itable:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(0, 132, 255),
+                  0px 0px 15px rgb(0, 128, 255) inset;
+    }
+    .img2:hover {
       transform: scale(1.2);
       cursor: pointer;
     }
+    .img1:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(4, 226, 255),
+                  0px 0px 15px rgb(0, 225, 255) inset;
+    }
 
-    .itable1:hover {
+    .itable1:hover,.itd1:hover {
       transform: scale(1.2);
       color: rgb(255, 128, 0);
       cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(255, 157, 0),
+                  0px 0px 15px rgb(255, 174, 0) inset;
     }
 
-    .itable2:hover {
+    .itable2:hover,.itd2:hover {
       transform: scale(1.2);
       color: #00ff1e;
       cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(38, 255, 0),
+                  0px 0px 15px rgb(55, 255, 0) inset;
     }
 
     .button:hover {
       transform: scale(1.2);
       background-color: rgb(33, 255, 4);
       cursor: pointer;
+      box-shadow: 0px 0px 15px rgb(38, 255, 0),
+                  0px 0px 15px rgb(55, 255, 0) inset;
     }
 
     .container {
@@ -121,6 +184,16 @@
     .img1 {
       transition: transform 0.3s ease;
     }
+    .img2 {
+      transition: transform 0.3s ease;
+    }
+
+    .video {
+      transition: transform 0.3s ease;
+      box-shadow: 0px 0px 30px rgb(255, 157, 0),
+        0px 0px 15px rgb(255, 157, 0) inset;
+    }
+
   </style>
 </head>
 
@@ -159,28 +232,28 @@
                   <table class="itable">
                     <tbody>
                       <tr>
-                        <td class="itd" style="border-radius: 30px 30px 0px 0px;">CONSOLE</td>
-                        <td class="itd" style="border-radius: 30px 30px 0px 0px;;">PS2</td>
+                        <td class="itd3" style="border-radius: 30px 30px 0px 0px;">CONSOLE</td>
+                        <td class="itd3" style="border-radius: 30px 30px 0px 0px;;">PS2</td>
                       </tr>
                       <tr>
-                        <td class="itd">PUBLISHER</td>
-                        <td class="itd">TAHLRETH</td>
+                        <td class="itd3">PUBLISHER</td>
+                        <td class="itd3">TAHLRETH</td>
                       </tr>
                       <tr>
-                        <td class="itd">DEVELOPER</td>
-                        <td class="itd">TAHLRETH</td>
+                        <td class="itd3">DEVELOPER</td>
+                        <td class="itd3">TAHLRETH</td>
                       </tr>
                       <tr>
-                        <td class="itd">SIZE</td>
-                        <td class="itd">20 MB</td>
+                        <td class="itd3">SIZE</td>
+                        <td class="itd3">20 MB</td>
                       </tr>
                       <tr>
-                        <td class="itd">RELESED</td>
-                        <td class="itd"> 2022 YEARS </td>
+                        <td class="itd3">RELESED</td>
+                        <td class="itd3"> 2022 YEARS </td>
                       </tr>
                       <tr>
-                        <td class="itd" style="border-radius: 0px 0px 30px 30px;">VERSION</td>
-                        <td class="itd" style="border-radius: 0px 0px 30px 30px;"> 1.5-4248 </td>
+                        <td class="itd3" style="border-radius: 0px 0px 30px 30px;">VERSION</td>
+                        <td class="itd3" style="border-radius: 0px 0px 30px 30px;"> 1.5-4248 </td>
                       </tr>
                     </tbody>
                   </table>
@@ -213,24 +286,24 @@
             <tbody>
               <h2>
                 <tr>
-                  <td class="itd" style="border-radius: 30px 30px 0px 0px;">PROCESSOR (SP)</td>
-                  <td class="itd" style="border-radius: 30px 30px 0px 0px;">SNAPDRAGON 450</td>
+                  <td class="itd1" style="border-radius: 30px 30px 0px 0px;">PROCESSOR (SP)</td>
+                  <td class="itd1" style="border-radius: 30px 30px 0px 0px;">SNAPDRAGON 450</td>
                 </tr>
                 <tr>
-                  <td class="itd">PROCESSOR (DM)</td>
-                  <td class="itd">DIMENSITY 700</td>
+                  <td class="itd1">PROCESSOR (DM)</td>
+                  <td class="itd1">DIMENSITY 700</td>
                 </tr>
                 <tr>
-                  <td class="itd">RAM</td>
-                  <td class="itd"> 4 GB</td>
+                  <td class="itd1">RAM</td>
+                  <td class="itd1"> 4 GB</td>
                 </tr>
                 <tr>
-                  <td class="itd">ANDROID VERSION</td>
-                  <td class="itd"> 8 & (ABOVE)</td>
+                  <td class="itd1">ANDROID VERSION</td>
+                  <td class="itd1"> 8 & (ABOVE)</td>
                 </tr>
                 <tr>
-                  <td class="itd" style="border-radius: 0px 0px 30px 30px;">STORAGE</td>
-                  <td class="itd" style="border-radius: 0px 0px 30px 30px;"> 32 GB</td>
+                  <td class="itd1" style="border-radius: 0px 0px 30px 30px;">STORAGE</td>
+                  <td class="itd1" style="border-radius: 0px 0px 30px 30px;"> 32 GB</td>
                 </tr>
             </tbody>
           </table>
@@ -244,24 +317,24 @@
             <tbody>
               <h2>
                 <tr>
-                  <td class="itd" style="border-radius: 30px 30px 0px 0px;">PROCESSOR (SP)</td>
-                  <td class="itd" style="border-radius: 30px 30px 0px 0px;">SNAPDRAGON 845 or NEWER CHIP</td>
+                  <td class="itd2" style="border-radius: 30px 30px 0px 0px;">PROCESSOR (SP)</td>
+                  <td class="itd2" style="border-radius: 30px 30px 0px 0px;">SNAPDRAGON 845 or NEWER CHIP</td>
                 </tr>
                 <tr>
-                  <td class="itd">PROCESSOR (DM)</td>
-                  <td class="itd">DIMENSITY 1000</td>
+                  <td class="itd2">PROCESSOR (DM)</td>
+                  <td class="itd2">DIMENSITY 1000</td>
                 </tr>
                 <tr>
-                  <td class="itd">RAM</td>
-                  <td class="itd"> 8 GB</td>
+                  <td class="itd2">RAM</td>
+                  <td class="itd2"> 8 GB</td>
                 </tr>
                 <tr>
-                  <td class="itd">ANDROID VERSION</td>
-                  <td class="itd"> 10+ </td>
+                  <td class="itd2">ANDROID VERSION</td>
+                  <td class="itd2"> 10+ </td>
                 </tr>
                 <tr>
-                  <td class="itd" style="border-radius: 0px 0px 30px 30px;">STORAGE</td>
-                  <td class="itd" style="border-radius: 0px 0px 30px 30px;"> 64 GB </td>
+                  <td class="itd2" style="border-radius: 0px 0px 30px 30px;">STORAGE</td>
+                  <td class="itd2" style="border-radius: 0px 0px 30px 30px;"> 64 GB </td>
                 </tr>
             </tbody>
           </table>
@@ -281,7 +354,7 @@
 
     <div class="container1">
       <div>
-        <img class="img1" src="image/ps2_bios.webp" style="width:400px;height:400px;margin: 40% 0% 0% 20%;">
+        <img class="img2" src="image/ps2_bios.webp" title="PLAYSTATION" style="width:400px;height:400px;margin: 40% 0% 0% 20%;">
       </div>
       <div class="c2">
         <h1 style="color: #ffffff;">AETHERSX2 AND BIOS FILES :</h1>
@@ -389,7 +462,7 @@
     </div>
     <br>
     <div
-      style="border: 1px solid white;border-radius: 30px; width: 50%;position: relative;left: 25%; overflow-x: scroll; scrollbar-width: none;">
+      style="border: 1px solid white;border-radius: 30px; width: 50%;position: relative;left: 25%; overflow-x: scroll; scrollbar-width: none;" class="video">
       <iframe width="935" height="415" style="border-radius: 30px;"
         src="https://www.youtube.com/embed/-veu7C7qmgw?si=dLow--X7ikCHEOp3" title="YouTube video player"
         title="YouTube video player" frameborder="0"
