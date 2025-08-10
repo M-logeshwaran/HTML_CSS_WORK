@@ -28,11 +28,21 @@
       border: 1px solid white;
       border-width: 80%;
       width: 80%;
+      transition: transform 0.3s ease;
     }
 
     .itd {
       padding: 20px;
       border: 1px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .itable:hover,
+    .itd:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgb(255, 136, 0),
+        0px 0px 15px rgb(255, 136, 0) inset;
     }
 
     .tdd {
@@ -54,18 +64,56 @@
       transition: transform 0.3s ease;
     }
 
-    .button:hover,
-    .img:hover,
+    .button:hover {
+      transform: scale(1.2);
+      background-color: rgb(33, 255, 4);
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgb(60, 255, 0),
+        0px 0px 15px rgb(60, 255, 0) inset;
+    }
+
+    .img:hover {
+      transform: scale(1.2);
+      background-color: rgb(33, 255, 4);
+      cursor: pointer;
+      box-shadow: 0px 0px 36px rgb(0, 132, 255),
+        0px 0px 15px rgb(0, 128, 255) inset;
+    }
+
     .img2:hover {
       transform: scale(1.2);
       background-color: rgb(33, 255, 4);
       cursor: pointer;
+      box-shadow: 0px 0px 20px rgb(255, 0, 0),
+        0px 0px 15px rgb(255, 0, 0) inset;
     }
 
     .p1 {
       border-radius: 30px;
       padding: 5px;
       width: 99%
+    }
+
+    .form {
+      transition: transform 0.3s ease;
+    }
+
+    .form:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 0px 30px rgb(201, 2, 245),
+        0px 0px 15px rgb(201, 2, 245) inset;
+    }
+
+    .video {
+      transition: transform 0.3s ease;
+      box-shadow: 0px 0px 30px rgb(255, 157, 0),
+        0px 0px 15px rgb(255, 157, 0) inset;
+    }
+
+    .video:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 0px 30px rgb(255, 0, 0),
+        0px 0px 15px rgb(255, 0, 0) inset;
     }
   </style>
 </head>
@@ -129,7 +177,8 @@
                     </tbody>
                   </table>
                   <br>
-                  <a href="https://sto.romsfast.com/PS3-DEC/God%20of%20War%20-%20Ascension%20(UK).zip?token=c3BZfVtkWAdAG3N9UyBTYF5bTRAiIFNxAGBaW0MXJX1TcwdmDR1FFnRwWnFRYVtX" style="text-decoration: none;"><button class="button">Download Here..</button></a> 
+                  <a href="https://sto.romsfast.com/PS3-DEC/God%20of%20War%20-%20Ascension%20(UK).zip?token=c3BZfVtkWAdAG3N9UyBTYF5bTRAiIFNxAGBaW0MXJX1TcwdmDR1FFnRwWnFRYVtX"
+                    style="text-decoration: none;"><button class="button">Download Here..</button></a>
                 </center>
               </h2>
               <br>
@@ -159,8 +208,14 @@
     </center>
 
     <br>
-    <div style="border: 1px solid white;border-radius: 30px; width: 50%;position: relative;left: 25%; overflow-x: scroll; scrollbar-width: none;">
-      <iframe width="935" height="415" style="border-radius: 30px;"  src="https://www.youtube.com/embed/zzDt32tu5Eg?si=qlluBrYAtwD3coeF&amp;start=72" title="YouTube video player" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div
+      style="border: 1px solid white;border-radius: 30px; width: 50%;position: relative;left: 25%; overflow-x: scroll; scrollbar-width: none;"
+      class="video">
+      <iframe width="935" height="415" style="border-radius: 30px;"
+        src="https://www.youtube.com/embed/zzDt32tu5Eg?si=qlluBrYAtwD3coeF&amp;start=72" title="YouTube video player"
+        title="YouTube video player" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <br>
 
