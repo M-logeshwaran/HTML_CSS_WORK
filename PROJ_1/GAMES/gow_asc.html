@@ -7,114 +7,141 @@
   <link rel="icon" href="image/me.jpg" style="height: 150px; width: 150px; border-radius: 50%;">
   <style>
     .img {
-      border: 2px solid white;
-      width: 500px;
-      height: 500px;
-      border-radius: 30px;
-      transition: transform 0.3s ease;
-    }
+            border: 2px solid white;
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+      }
 
-    .img2 {
-      width: 500px;
-      height: 350px;
-      border: 0.5px solid white;
-      border-radius: 30px;
-      transition: transform 0.3s ease;
-    }
+        .form1:hover{
+            cursor: pointer;
+            color: rgb(255, 0, 0);
+            text-shadow: 0px 0px 25px rgb(255, 0, 217);
+      }
 
-    .itable {
-      text-align: center;
-      border-radius: 30px;
-      border: 1px solid white;
-      border-width: 80%;
-      width: 80%;
-      transition: transform 0.3s ease;
-    }
+        .img2 {
+            width: 500px;
+            height: 350px;
+            border: 0.5px solid white;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
 
-    .itd {
-      padding: 20px;
-      border: 1px solid white;
-      transition: transform 0.3s ease;
-    }
+        .itable {
+            text-align: center;
+            border-radius: 30px;
+            border: 1px solid white;
+            border-width: 80%;
+            width: 80%;
+            transition: transform 0.3s ease;
+        }
 
-    .itable:hover,
-    .itd:hover {
-      transform: scale(1.2);
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgb(255, 136, 0),
-        0px 0px 15px rgb(255, 136, 0) inset;
-    }
+        .itd {
+            padding: 20px;
+            border: 1px solid white;
+            transition: transform 0.3s ease;
+        }
 
-    .tdd {
-      border: 2px solid white;
-      background-image: url(image/background4.jpg);
-      background-attachment: fixed;
-      text-align: center;
-      width: 60%;
-      border-radius: 30px;
-    }
+        .itd1 {
+            padding: 20px;
+            border: 1px solid white;
+            transition: transform 0.3s ease;
+        }
 
-    .button {
-      width: 300px;
-      height: 50px;
-      font-size: larger;
-      background-color: rgb(255, 238, 0);
-      border-radius: 30px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      transition: transform 0.3s ease;
-    }
+        .itd1:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            color: rgb(225, 0, 255);
+            box-shadow: 0px 0px 20px rgb(221, 0, 255),
+                0px 0px 15px rgb(221, 0, 255) inset;
+        }
 
-    .button:hover {
-      transform: scale(1.2);
-      background-color: rgb(33, 255, 4);
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgb(60, 255, 0),
-        0px 0px 15px rgb(60, 255, 0) inset;
-    }
+        .itable:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgb(255, 136, 0),
+                0px 0px 15px rgb(255, 136, 0) inset;
+        }
 
-    .img:hover {
-      transform: scale(1.2);
-      background-color: rgb(33, 255, 4);
-      cursor: pointer;
-      box-shadow: 0px 0px 36px rgb(0, 132, 255),
-        0px 0px 15px rgb(0, 128, 255) inset;
-    }
+        .itd:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            color: rgb(77, 255, 0);
+            box-shadow: 0px 0px 20px rgb(0, 255, 38),
+                0px 0px 15px rgb(0, 255, 55) inset;
+        }
 
-    .img2:hover {
-      transform: scale(1.2);
-      background-color: rgb(33, 255, 4);
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgb(255, 0, 0),
-        0px 0px 15px rgb(255, 0, 0) inset;
-    }
+        .tdd {
+            border: 2px solid white;
+            background-image: url(image/background4.jpg);
+            background-attachment: fixed;
+            text-align: center;
+            width: 60%;
+            border-radius: 30px;
+        }
 
-    .p1 {
-      border-radius: 30px;
-      padding: 5px;
-      width: 99%
-    }
+        .button {
+            width: 300px;
+            height: 50px;
+            font-size: larger;
+            background-color: rgb(255, 238, 0);
+            border-radius: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: transform 0.3s ease;
+        }
 
-    .form {
-      transition: transform 0.3s ease;
-    }
+        .button:hover {
+            transform: scale(1.2);
+            background-color: rgb(33, 255, 4);
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgb(60, 255, 0),
+                0px 0px 15px rgb(60, 255, 0) inset;
+        }
 
-    .form:hover {
-      transform: scale(1.2);
-      box-shadow: 0px 0px 30px rgb(201, 2, 245),
-        0px 0px 15px rgb(201, 2, 245) inset;
-    }
+        .img:hover {
+            transform: scale(1.2);
+            background-color: rgb(33, 255, 4);
+            cursor: pointer;
+            box-shadow: 0px 0px 36px cyan,
+                0px 0px 15px cyan inset;
+        }
 
-    .video {
-      transition: transform 0.3s ease;
-      box-shadow: 0px 0px 30px rgb(255, 157, 0),
-        0px 0px 15px rgb(255, 157, 0) inset;
-    }
+        .img2:hover {
+            transform: scale(1.2);
+            background-color: rgb(33, 255, 4);
+            cursor: pointer;
+            box-shadow: 0px 0px 25px rgb(255, 0, 0),
+                0px 0px 15px rgb(255, 0, 0) inset;
+        }
 
-    .video:hover {
-      transform: scale(1.2);
-      box-shadow: 0px 0px 30px rgb(255, 0, 0),
-        0px 0px 15px rgb(255, 0, 0) inset;
-    }
+        .p1 {
+            border-radius: 30px;
+            padding: 5px;
+            width: 99%
+        }
+
+        .form {
+            transition: transform 0.3s ease;
+        }
+
+        .form:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 0px 30px rgb(201, 2, 245),
+                0px 0px 15px rgb(201, 2, 245) inset;
+        }
+
+        .video {
+            transition: transform 0.3s ease;
+            box-shadow: 0px 0px 30px rgb(255, 157, 0),
+                0px 0px 15px rgb(255, 157, 0) inset;
+        }
+
+        .video:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 0px 30px rgb(255, 0, 0),
+                0px 0px 15px rgb(255, 0, 0) inset;
+        }
   </style>
 </head>
 
@@ -124,10 +151,10 @@
   <body style="text-align: center; background-image: url(image/background2.jpg); background-attachment: fixed;">
     <div class="head">
       <fieldset
-        style="border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); background-attachment: fixed; position: sticky; top: 0px;">
+        style="box-shadow: 0px 0px 15px rgb(255, 255, 255);border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); background-attachment: fixed; position: sticky; top: 0px;">
         <center>
           <br>
-          <h1 style="color: white;"><b>
+          <h1 style="color: white;"><b class="form1">
               <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form">
               LOKI.GAME.com</b>
           </h1>
@@ -148,30 +175,30 @@
         <tbody style="color: aliceblue;">
           <tr>
             <td><img src="image/gow_ascension.jpg" class="img" title="GOW_ASC"></td>
-            <td class="tdd">
+            <td class="tdd" style="box-shadow: 0px 0px 15px rgb(255, 255, 255);">
               <h1> GOD OF WAR_ASCENSION </h1>
               <h2>
                 <center>
                   <table class="itable">
                     <tbody>
                       <tr>
-                        <td class="itd" style="border-radius: 30px 30px 0px 0px;">CONSOLE</td>
+                        <td class="itd1" style="border-radius: 30px 30px 0px 0px;">CONSOLE</td>
                         <td class="itd" style="border-radius: 30px 30px 0px 0px;;">PS3 (EXCLUSIVE)</td>
                       </tr>
                       <tr>
                         <td class="itd">PUBLISHER</td>
-                        <td class="itd">SONY</td>
+                        <td class="itd1">SONY</td>
                       </tr>
                       <tr>
-                        <td class="itd">DEVELOPER</td>
+                        <td class="itd1">DEVELOPER</td>
                         <td class="itd">SANTO MONICA STUDIO</td>
                       </tr>
                       <tr>
                         <td class="itd">SIZE</td>
-                        <td class="itd">34.78 G</td>
+                        <td class="itd1">34.78 G</td>
                       </tr>
                       <tr>
-                        <td class="itd" style="border-radius: 0px 0px 30px 30px;">RELESED</td>
+                        <td class="itd1" style="border-radius: 0px 0px 30px 30px;">RELESED</td>
                         <td class="itd" style="border-radius: 0px 0px 30px 30px;">MARCH 12,2013</td>
                       </tr>
                     </tbody>
@@ -192,7 +219,7 @@
 
     <br>
     <div
-      style="background-image: url(image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px;">
+      style="border-color: #000000; box-shadow: 0px 0px 15px rgb(0, 0, 0);background-image: url(image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px;">
       <h1>>>> GAME PLAY</h1>
     </div>
     <br>
@@ -221,7 +248,7 @@
 
     <center>
       <fieldset
-        style="background-image: url(image/background3.avif); background-attachment: fixed;border-radius: 30px;color: #000000;">
+        style="border-color: #000000; box-shadow: 0px 0px 15px rgb(0, 0, 0);background-image: url(image/background3.avif); background-attachment: fixed;border-radius: 30px;color: #000000;">
         <h1> >>> EMULATOR RECOMMENDED :</h1>
         <h2>* APS3 (mobile)</h2>
         <h2>* RPCS3 (pc)</h2>
@@ -231,7 +258,7 @@
     <br>
     <center>
       <fieldset
-        style="background-image: url(image/background4.jpg); background-attachment: fixed;border-radius: 30px;color: #ffffff;">
+        style="box-shadow: 0px 0px 15px rgb(255, 255, 255);background-image: url(image/background4.jpg); background-attachment: fixed;border-radius: 30px;color: #ffffff;">
         <h2> >>> STORY SUMMARY </h2>
         <p style="font-size: larger;">" Kratos has captured by furies for breaking a promise he made to the god of war "
         </p>
@@ -302,7 +329,7 @@
 
     <center>
       <fieldset
-        style="color: aliceblue; background-image: url(image/background1.jpg); background-size: cover; border-radius: 30px; padding: 5px; background-attachment: fixed;">
+        style="box-shadow: 0px 0px 15px rgb(255, 255, 255);color: aliceblue; background-image: url(image/background1.jpg); background-size: cover; border-radius: 30px; padding: 5px; background-attachment: fixed;">
         <br><br><br><br><br>
         <h1>--- Thank You For Visiting ---</h1><br><br>
         <hr>
