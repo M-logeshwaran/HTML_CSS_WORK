@@ -43,17 +43,6 @@
             text-shadow: 0px 0px 25px rgb(255, 0, 217);
         }
 
-        .form {
-            transition: transform 0.3s ease;
-            animation: appear 0.5s linear;
-        }
-
-        .form:hover {
-            transform: scale(1.2);
-            box-shadow: 0px 0px 30px rgb(201, 2, 245),
-                0px 0px 15px rgb(201, 2, 245) inset;
-        }
-
         .imgs1:hover {
             transform: scale(1.2);
             cursor: pointer;
@@ -228,6 +217,51 @@
             to {
                 opacity: 1;
                 scale: 1;
+            }
+        }
+
+        .form {
+            box-shadow: 0px 0px 30px rgb(228, 1, 248);
+            transition: transform 0.3s ease;
+            animation: glow 10s linear infinite, appear4 0.5s linear;
+        }
+
+        .form:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 30px rgb(228, 1, 248);
+        }
+
+        @keyframes appear4 {
+            from {
+                opacity: 0;
+                scale: 0;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        @keyframes glow {
+            20% {
+                box-shadow: 0px 0px 30px rgb(228, 1, 248);
+            }
+
+            40% {
+                box-shadow: 0px 0px 30px rgb(255, 0, 76);
+            }
+
+            60% {
+                box-shadow: 0px 0px 30px rgb(132, 0, 255);
+            }
+
+            80% {
+                box-shadow: 0px 0px 30px rgb(0, 217, 255);
+            }
+
+            100% {
+                box-shadow: 0px 0px 30px rgb(228, 1, 248);
             }
         }
 
@@ -487,7 +521,7 @@
             <a href="EG_emulator_setup.html" style="text-decoration: none;">
                 <div style="background-image: url(image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px;"
                     class="link">
-                    <h1 class="button">>>> EMULATORS SETUP (COMING SOON)</h1>
+                    <h1 class="button">>>> EMULATORS SETUP </h1>
                 </div>
             </a>
             <br>
@@ -527,12 +561,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <h3><a href="EG_aboutme.html" style="color: aliceblue;" target="_blank">About me..</a>
+                                <h3><a href="EG_aboutme.html" style="color: aliceblue;">About me..</a>
                                 </h3>
                             </td>
                             <td>
-                                <h3><a href="https://github.com/M-logeshwaran" style="color: aliceblue;"
-                                        target="_blank">Loki.Github.com</a></h3>
+                                <h3><a href="https://github.com/M-logeshwaran"
+                                        style="color: aliceblue;">Loki.Github.com</a></h3>
                             </td>
                             <td>
                                 <h3>+91 6382117611 </h3>
