@@ -6,55 +6,165 @@
     <link rel="icon" href="image/me.jpg" style="height: 150px; width: 150px; border-radius: 50%;">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
+        .feild:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        }
+
         .form {
             transition: transform 0.3s ease;
+            animation: appear1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 25%;
+        }
+
+        .form3:hover {
+            cursor: pointer;
+            color: rgb(255, 0, 0);
+            text-shadow: 0px 0px 25px rgb(255, 0, 217);
         }
 
         .form:hover {
             transform: scale(1.2);
             cursor: pointer;
             box-shadow: 0px 0px 30px rgb(0, 0, 0),
-                        0px 0px 15px rgb(0, 0, 0) inset;
+                0px 0px 15px rgb(0, 0, 0) inset;
         }
 
         .form2 {
             transition: transform 0.3s ease;
+            animation: appear1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 25%;
+        }
+
+        .form3 {
+            animation: appear3 0.5s linear;
         }
 
         .form2:hover {
             transform: scale(1.2);
             cursor: pointer;
             box-shadow: 0px 0px 30px rgb(255, 255, 255),
-                        0px 0px 15px rgb(255, 255, 255) inset;
+                0px 0px 15px rgb(255, 255, 255) inset;
         }
 
         .form1 {
             transition: transform 0.3s ease;
+            animation: appear3 0.5s linear;
         }
 
         .form1:hover {
             transform: scale(1.2);
             cursor: pointer;
             box-shadow: 0px 0px 30px rgb(201, 2, 245),
-                        0px 0px 15px rgb(201, 2, 245) inset;
+                0px 0px 15px rgb(201, 2, 245) inset;
         }
 
-        .table,.td{
+        .table {
             text-align: center;
             transition: transform 0.3s ease;
+            animation: appear2 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 25%;
         }
 
-        .table:hover,.td:hover {
+        .td {
+            text-align: center;
+            transition: transform 0.3s ease;
+            animation: appear1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 15%;
+        }
+
+        @keyframes appear2 {
+            from {
+                opacity: 0;
+                transform: translate(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+
+        .table:hover,
+        .td:hover {
             transform: scale(1.2);
             cursor: pointer;
-            box-shadow: 0px 0px 20px cyan; 
+            box-shadow: 0px 0px 20px cyan;
         }
 
-        .table1:hover,.td1:hover {
+        .table1 {
+            animation: appear2 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 25%;
+        }
+
+        .td1 {
+            animation: appear1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 15%;
+        }
+
+        .table1:hover,
+        .td1:hover {
             cursor: pointer;
-            box-shadow: 0px 0px 20px cyan; 
+            box-shadow: 0px 0px 20px cyan;
         }
 
+        .start {
+            animation: appear3 0.5s linear;
+        }
+
+        @keyframes appear3 {
+            from {
+                opacity: 0;
+                scale: 0;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .text {
+            animation: appear1 linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 25%;
+        }
+
+        @keyframes appear1 {
+            from {
+                opacity: 0;
+                scale: 0;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .last {
+            animation: appear4 linear;
+            animation-timeline: view();
+            animation-range: entry 0;
+        }
+
+        @keyframes appear4 {
+            from {
+                opacity: 0;
+                transform: translate(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
     </style>
 </head>
 
@@ -62,10 +172,10 @@
 
 <body style="background-image: url(image/background2.jpg); background-attachment: fixed;">
     <fieldset
-        style="border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); background-attachment: fixed; border: 1px solid; color: aliceblue;">
+        style="box-shadow: 0px 0px 15px rgb(255, 255, 255); border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); background-attachment: fixed; border: 1px solid; color: aliceblue;">
         <center>
             <br>
-            <h1 style="color: white;"><b>
+            <h1 style="color: white;"><b class="form3">
                     <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form1">
                     LOKI.EMULATION.com</b>
             </h1>
@@ -73,13 +183,13 @@
         </center>
     </fieldset>
 
-
+    <br>
 
 
     <fieldset
-        style="border-radius: 30px; padding: 1px; background-image: url(image/background3.avif); border-radius: 30px; border-radius: 30px; border: 2px solid black; background-attachment: fixed; position: sticky; top: 0px;">
+        style="box-shadow: 0px 0px 15px rgb(0, 0, 0); border-radius: 30px; padding: 1px; background-image: url(image/background3.avif); border-radius: 30px; border-radius: 30px; border: 2px solid black; background-attachment: fixed; position: sticky; top: 0px;z-index: 1;">
         <center>
-            <h1 style="color: rgb(0, 0, 0);">
+            <h1 style="color: rgb(0, 0, 0);" class="start">
                 >>> GOAT GAME
             </h1>
         </center>
@@ -92,17 +202,18 @@
         <tbody>
             <tr>
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background4.jpg); color: rgb(255, 255, 255); background-attachment: fixed;">
                         <legend>
-                            <h1>* Game 1</h1>
+                            <h1 class="text">* Game 1</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/gow1.jpg" height="300px" width="300px" alt="GOD OF WAR 1" title="GOW1"
                                 style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 1" class="form2">
-                            <h2>GOD OF WAR 1</h2>
-                            <p>God of War is a 2005 action-adventure game developed by Santa Monica Studio and published
+                            <h2 class="text">GOD OF WAR 1</h2>
+                            <p class="text">God of War is a 2005 action-adventure game developed by Santa Monica Studio
+                                and published
                                 by Sony Computer Entertainment (SCE). First released for the PlayStation 2 on March 22,
                                 2005, the game is the first installment in the God of War series and the third
                                 chronologically. Loosely based on Greek mythology, it is set in ancient Greece with
@@ -115,8 +226,9 @@
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
@@ -155,17 +267,18 @@
 
 
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background3.avif); color: rgb(0, 0, 0); border: 2px solid black; background-attachment: fixed;">
                         <legend style="color: rgb(0, 0, 0);">
-                            <h1>* Game 2</h1>
+                            <h1 class="text">* Game 2</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/gow2.jpg" height="300px" width="300px" alt="GOD OF WAR 2" title="GOW2"
                                 style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 2" class="form">
-                            <h2>GOD OF WAR 2</h2>
-                            <p>God of War II is a 2007 action-adventure game developed by Santa Monica Studio and
+                            <h2 class="text">GOD OF WAR 2</h2>
+                            <p class="text">God of War II is a 2007 action-adventure game developed by Santa Monica
+                                Studio and
                                 published by Sony Computer Entertainment (SCE). First released for the PlayStation 2 on
                                 March 13, 2007, the game is the second installment in the God of War series, the sixth
                                 chronologically, and the sequel to 2005's God of War. It is based on Greek mythology and
@@ -178,8 +291,9 @@
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
@@ -218,17 +332,18 @@
 
 
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background4.jpg); color: rgb(255, 255, 255); background-attachment: fixed; border: 2px solid;">
                         <legend>
-                            <h1>* Game 3</h1>
+                            <h1 class="text">* Game 3</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/GOW3.avif" height="300px" width="300px" alt="GOD OF WAR 3" title="GOW3"
                                 style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR 3" class="form2">
-                            <h2>GOD OF WAR 3</h2>
-                            <p>God of War III is a 2010 action-adventure game developed by Santa Monica Studio and
+                            <h2 class="text">GOD OF WAR 3</h2>
+                            <p class="text">God of War III is a 2010 action-adventure game developed by Santa Monica
+                                Studio and
                                 published by Sony Computer Entertainment. First released for the PlayStation 3 on March
                                 16, 2010, it is the fifth installment in the God of War series, the seventh
                                 chronologically, the sequel to 2007's God of War II, and the first mainline title to be
@@ -242,8 +357,9 @@
                                 Olympian gods to have his revenge.<a href="https://en.wikipedia.org/wiki/God_of_War_III"
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
@@ -283,18 +399,20 @@
 
             <tr>
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background3.avif); color: rgb(0, 0, 0); border: 2px solid black; background-attachment: fixed;">
                         <legend>
-                            <h1>* Game 4</h1>
+                            <h1 class="text">* Game 4</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/gow_chain.jpg" height="300px" width="300px"
                                 alt="GOD OF WAR CHAINS OF OLYMPUS" title="GOW_CH"
-                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR CH" class="form" class="table">
-                            <h2>GOD OF WAR CHAINS OF OLYMPUS</h2>
-                            <p>God of War: Chains of Olympus is a 2008 action-adventure game developed by Ready at Dawn,
+                                style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR CH" class="form"
+                                class="table">
+                            <h2 class="text">GOD OF WAR CHAINS OF OLYMPUS</h2>
+                            <p class="text">God of War: Chains of Olympus is a 2008 action-adventure game developed by
+                                Ready at Dawn,
                                 and published by Sony Computer Entertainment (SCE). It was first released for the
                                 PlayStation Portable (PSP) handheld console on March 4, 2008. The game is the fourth
                                 installment in the God of War series, the second chronologically, and a prequel to the
@@ -309,15 +427,16 @@
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
                                         <td style="border: 1px solid" class="td">NAME</td>
                                         <td style="border: 1px solid" class="td">GOW_CHAIN OF OLYMPUS</td>
                                         <td style="border: 1px solid" class="td"><a href="GAMES/gow_ch.html"
-                                                style="color: rgb(2, 175, 255);" > Download Link1..</a></td>
+                                                style="color: rgb(2, 175, 255);"> Download Link1..</a></td>
                                     </tr>
                                     <tr>
                                         <td style="border: 1px solid" class="td">2.</td>
@@ -349,18 +468,19 @@
 
 
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background4.jpg); color: rgb(255, 255, 255); border: 2px solid rgb(255, 255, 255); background-attachment: fixed;">
                         <legend style="color: rgb(255, 255, 255);">
-                            <h1>* Game 5</h1>
+                            <h1 class="text">* Game 5</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/God_of_War_Ghost_of_Sparta.webp" height="300px" width="300px"
                                 alt="GOD OF WAR GHOST OF SPARTA" title="GOW_GOS"
                                 style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR GOS" class="form2">
-                            <h2>GOD OF WAR GHOST OF SPARTA</h2>
-                            <p>God of War: Ghost of Sparta is a 2010 action-adventure game developed by Ready at Dawn
+                            <h2 class="text">GOD OF WAR GHOST OF SPARTA</h2>
+                            <p class="text">God of War: Ghost of Sparta is a 2010 action-adventure game developed by
+                                Ready at Dawn
                                 and published by Sony Computer Entertainment (SCE). It was first released for the
                                 PlayStation Portable (PSP) handheld console on November 2, 2010. The game is the sixth
                                 installment in the God of War series and the fourth chronologically. Loosely based on
@@ -374,8 +494,9 @@
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
@@ -414,18 +535,19 @@
 
 
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background3.avif); color: rgb(0, 0, 0); border: 2px solid black; background-attachment: fixed;">
                         <legend>
-                            <h1>* Game 6</h1>
+                            <h1 class="text">* Game 6</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/gow_ascension.jpg" height="300px" width="300px" alt="GOD OF WAR 3"
                                 title="GOW_ASC" style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR asc"
                                 class="form">
-                            <h2>GOD OF WAR ASCENSION</h2>
-                            <p>God of War: Ascension is a 2013 action-adventure game developed by Santa Monica Studio
+                            <h2 class="text">GOD OF WAR ASCENSION</h2>
+                            <p class="text">God of War: Ascension is a 2013 action-adventure game developed by Santa
+                                Monica Studio
                                 and published by Sony Computer Entertainment for the PlayStation 3. Released in March
                                 2013, it is the seventh installment in the God of War series, the first chronologically,
                                 and a prequel to the entire series. Loosely based on Greek mythology, it is set in
@@ -438,8 +560,9 @@
                                 of his bond to Ares.<a href="https://en.wikipedia.org/wiki/God_of_War:_Ascension"
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
-                            <table style="border: 2px solid;border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid;border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
@@ -480,17 +603,18 @@
 
             <tr>
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background4.jpg); color: rgb(255, 255, 255); background-attachment: fixed; border: 2px solid;">
                         <legend>
-                            <h1>* Game 7</h1>
+                            <h1 class="text">* Game 7</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/god-of-war.jpg" height="300px" width="300px" alt="GOD OF WAR" title="GOW"
                                 style="border: 1px solid; border-radius: 15px;" id="GOD OF WAR" class="form2">
-                            <h2>GOD OF WAR</h2>
-                            <p>God of War is an action-adventure game franchise created by David Jaffe and developed by
+                            <h2 class="text">GOD OF WAR</h2>
+                            <p class="text">God of War is an action-adventure game franchise created by David Jaffe and
+                                developed by
                                 Sony's Santa Monica Studio. It began in 2005 on the PlayStation 2 (PS2) video game
                                 console and has become a flagship series for PlayStation, consisting of nine
                                 installments across multiple platforms. Based on ancient mythologies, the series' plot
@@ -504,8 +628,9 @@
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
@@ -540,18 +665,19 @@
 
 
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background3.avif); color: rgb(0, 0, 0); border: 2px solid black; background-attachment: fixed;">
                         <legend style="color: rgb(0, 0, 0);">
-                            <h1>* Game 8</h1>
+                            <h1 class="text">* Game 8</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/spiderman.avif" height="300px" width="300px" alt="SPIDER MAN REMASTERED"
                                 title="SPIDER MAN" style="border: 1px solid; border-radius: 15px;" id="SPIDER MAN"
                                 class="form">
-                            <h2>SPIDER MAN REMASTERED</h2>
-                            <p>Marvel's Spider-Man[b] is a 2018 action-adventure game developed by Insomniac Games and
+                            <h2 class="text">SPIDER MAN REMASTERED</h2>
+                            <p class="text">Marvel's Spider-Man[b] is a 2018 action-adventure game developed by
+                                Insomniac Games and
                                 published by Sony Interactive Entertainment. The first installment in the Marvel's
                                 Spider-Man game series, it is based on the Marvel Comics character Spider-Man and tells
                                 an original narrative that is inspired by the long-running comic book mythology, while
@@ -564,15 +690,15 @@
                                     style="color: rgb(0, 0, 0);" target="_blank">
                                     <br>Read more..</a></p>
 
-                            <table style="border: 2px solid;  border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid;  border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
                                         <td style="border: 1px solid" class="td">NAME</td>
                                         <td style="border: 1px solid" class="td">SPIDER MAN REMASTERED</td>
-                                        <td style="border: 1px solid" class="td"><a
-                                                href="GAMES/spiderman.html"
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/spiderman.html"
                                                 style="color: rgb(0, 110, 255);" class="td"> Download Link1..</a>
                                         </td>
                                     </tr>
@@ -586,8 +712,7 @@
                                         <td style="border: 1px solid" class="td">3.</td>
                                         <td style="border: 1px solid" class="td">EMULATOR 2</td>
                                         <td style="border: 1px solid" class="td">PC VERSION (available)</td>
-                                        <td style="border: 1px solid" class="td"><a
-                                                href="GAMES/spiderman.html"
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/spiderman.html"
                                                 style="color: rgb(0, 110, 255);"> Download Link3..</a>
                                         </td>
                                     </tr>
@@ -603,18 +728,19 @@
 
 
                 <td>
-                    <fieldset
+                    <fieldset class="feild"
                         style="border-radius: 30px; background-image: url(image/background4.jpg); color: rgb(255, 255, 255); background-attachment: fixed; border: 2px solid;">
                         <legend>
-                            <h1>* Game 9</h1>
+                            <h1 class="text">* Game 9</h1>
                         </legend>
                         <center>
                             <br>
                             <img src="image/Ghost_of_Tsushima.jpg" height="300px" width="300px" alt="GHOST OF TSUSHIMA"
                                 title="GHOST OF TSUSHIMA" style="border: 1px solid; border-radius: 15px;"
                                 id="GHOST OF TSUSHIMA" class="form2">
-                            <h2>GHOST OF TSUSHIMA</h2>
-                            <p>Ghost of Tsushima is a 2020 action-adventure game developed by Sucker Punch Productions
+                            <h2 class="text">GHOST OF TSUSHIMA</h2>
+                            <p class="text">Ghost of Tsushima is a 2020 action-adventure game developed by Sucker Punch
+                                Productions
                                 and published by Sony Interactive Entertainment. The player controls Jin Sakai, a
                                 samurai on a quest to protect Tsushima Island during the first Mongol invasion of Japan.
                                 Jin must choose between following the warrior code to fight honorably, or by using
@@ -626,15 +752,15 @@
                                 separately in September 2021.<a href="https://en.wikipedia.org/wiki/Ghost_of_Tsushima"
                                     style="color: rgb(255, 255, 255);" target="_blank">
                                     <br>Read more..</a></p>
-                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px" class="table">
-                                <h2>Download links..</h2>
+                            <table style="border: 2px solid; border-radius: 15px;" height="150px" width="500px"
+                                class="table">
+                                <h2 class="text">Download links..</h2>
                                 <tbody>
                                     <tr>
                                         <td style="border: 1px solid" class="td">1.</td>
                                         <td style="border: 1px solid" class="td">NAME</td>
                                         <td style="border: 1px solid" class="td">GHOST OF TSUSHIMA</td>
-                                        <td style="border: 1px solid" class="td"><a
-                                                href="GAMES/ghost_of_tsh.html"
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/ghost_of_tsh.html"
                                                 style="color: rgb(208, 255, 0);"> Download Link1..</a>
                                         </td>
                                     </tr>
@@ -648,14 +774,13 @@
                                         <td style="border: 1px solid" class="td">3.</td>
                                         <td style="border: 1px solid" class="td">EMULATOR 2</td>
                                         <td style="border: 1px solid" class="td">PC VERSION (available)</td>
-                                        <td style="border: 1px solid" class="td"><a
-                                                href="GAMES/ghost_of_tsh.html"
+                                        <td style="border: 1px solid" class="td"><a href="GAMES/ghost_of_tsh.html"
                                                 style="color: rgb(229, 255, 0);"> Download Link3..</a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <br><br><br><br><br>
+                            <br><br><br><br>
                         </center>
                     </fieldset>
                 </td>
@@ -667,11 +792,11 @@
 
     <br>
     <fieldset
-        style="border-radius: 30px; background-image: url(image/background3.avif); border: 2px solid black; background-attachment: fixed;">
+        style="box-shadow: 0px 0px 15px rgb(0, 0, 0); border-radius: 30px; background-image: url(image/background3.avif); border: 2px solid black; background-attachment: fixed;">
         <center>
             <h2 style="color: rgb(0, 0, 0);">
                 <table style="border: 2px dashed; border-radius: 15px;" width="80%" class="table1">
-                    <h2>GAME LISTS...</h2>
+                    <h2 class="text">GAME LISTS...</h2>
                     <tbody>
                         <tr>
                             <ul>
@@ -726,7 +851,8 @@
 
 
     <center
-        style="color: aliceblue; background-image: url(image/background1.jpg); border-radius: 30px; background-attachment: fixed; border: 1px solid;">
+        style="box-shadow: 0px 0px 15px rgb(255, 255, 255); color: aliceblue; background-image: url(image/background1.jpg); border-radius: 30px; background-attachment: fixed; border: 1px solid;"
+        class="last">
         <br><br>
         <h1>Follow Me on..</h1>
 
