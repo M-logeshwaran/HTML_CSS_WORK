@@ -6,13 +6,88 @@
   <title>Loki.Aboutme.com</title>
   <link rel="icon" href="image/me.jpg" style="height: 150px; width: 150px; border-radius: 50%;">
   <style>
-    .form {
+    .text {
       transition: transform 0.3s ease;
+      animation: appear1 0.5s linear;
     }
 
-    .form:hover {
-      transform: scale(1.2);
+    .text1 {
+      animation: appear1 0.5s linear;
+    }
+
+    .text:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px rgb(255, 253, 255);
+    }
+
+    .form1:hover{
       cursor: pointer;
+      color: rgb(255, 0, 0);
+      text-shadow: 0px 0px 25px rgb(255, 0, 217);
+    }
+
+    .board{
+      animation: appear 0.5s linear;
+    }
+    @keyframes appear{
+      from{
+        opacity: 0;
+        transform: translate(-300px);
+      }
+      to{
+        opacity: 1;
+        transform: translate(0px);
+      }
+    }
+
+    .text{
+      animation: appear1 0.5s linear;
+    }
+    @keyframes appear1{
+      from{
+        opacity: 0;
+        scale: 0;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    .form{
+      box-shadow: 0px 0px 30px rgb(228, 1, 248);
+      transition: transform 0.3s ease;
+      animation: glow 10s linear infinite, appear2 0.5s linear;   
+    }
+    .form:hover{
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px rgb(228, 1, 248);
+    }
+    @keyframes appear2{
+      from{
+        opacity: 0;
+        scale: 0;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    @keyframes glow{
+      20%{
+        box-shadow: 0px 0px 30px rgb(228, 1, 248);
+      }
+      40%{
+        box-shadow: 0px 0px 30px rgb(255, 0, 76);
+      }
+      60%{
+        box-shadow: 0px 0px 30px rgb(132, 0, 255);
+      }
+      80%{
+        box-shadow: 0px 0px 30px rgb(0, 217, 255);
+      }
+      100%{
+        box-shadow: 0px 0px 30px rgb(228, 1, 248);
+      }
     }
   </style>
 </head>
@@ -20,11 +95,12 @@
 
 <body style="text-align: center; background-image: url(image/background2.jpg); background-attachment: fixed;">
 
-  <fieldset
-    style="border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); border-radius: 30px; background-attachment: fixed;">
+  <fieldset class="board"
+    style="border-radius: 30px; padding: 5px; background-image: url(image/background1.jpg); border-radius: 30px; background-attachment: fixed;
+    box-shadow: 0px 0px 25px white;">
     <center>
       <br>
-      <h1 style="color: white;"><b>
+      <h1 style="color: white;"><b class="form1">
           <img src="image/me.jpg" style="width: 150px; height: 150px; border-radius: 50% ;" class="form">
           ABOUT ME</b>
       </h1>
@@ -42,7 +118,7 @@
       class="form">
 
       <br>
-      <h3>
+      <h3 class="text1">
         <p>
           * Hi, I’m Logesh Waran — the creator of this site. I’m an independent learner who recently started exploring
           the world of web development.
@@ -68,7 +144,7 @@
           and development.
           Thank you for visiting — and if you enjoy retro gaming, you’re in the right place!
         </p>
-      </H3>
+      </h3>
       <br>
 
     </fieldset>
@@ -78,8 +154,8 @@
 
   <br><br>
   <center>
-    <fieldset
-      style="color: aliceblue; background-image: url(image/background1.jpg); background-size: cover; border-radius: 30px; padding: 5px; background-attachment: fixed;">
+    <fieldset class = "board"
+      style="box-shadow: 0px 0px 25px white; color: aliceblue; background-image: url(image/background1.jpg); background-size: cover; border-radius: 30px; padding: 5px; background-attachment: fixed;">
       <br><br><br><br><br>
       <h1>--- Thank You For Visiting ---</h1><br><br>
       <hr>
