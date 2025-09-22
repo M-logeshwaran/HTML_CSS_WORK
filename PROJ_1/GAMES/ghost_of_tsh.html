@@ -5,152 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Loki.Ghost_tsus.com</title>
     <link rel="icon" href="image/me.jpg" style="height: 150px; width: 150px; border-radius: 50%;">
-    <style>
-        .img {
-            border: 2px solid white;
-            width: 500px;
-            height: 500px;
-            border-radius: 30px;
-            transition: transform 0.3s ease;
-      }
-
-        .form1:hover{
-            cursor: pointer;
-            color: rgb(255, 0, 0);
-            text-shadow: 0px 0px 25px rgb(255, 0, 217);
-      }
-
-        .img2 {
-            width: 500px;
-            height: 350px;
-            border: 0.5px solid white;
-            border-radius: 30px;
-            transition: transform 0.3s ease;
-        }
-
-        .itable {
-            text-align: center;
-            border-radius: 30px;
-            border: 1px solid white;
-            border-width: 80%;
-            width: 80%;
-            transition: transform 0.3s ease;
-        }
-
-        .itd {
-            padding: 20px;
-            border: 1px solid white;
-            transition: transform 0.3s ease;
-        }
-
-        .itd1 {
-            padding: 20px;
-            border: 1px solid white;
-            transition: transform 0.3s ease;
-        }
-
-        .itd1:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-            color: rgb(225, 0, 255);
-            box-shadow: 0px 0px 20px rgb(221, 0, 255),
-                0px 0px 15px rgb(221, 0, 255) inset;
-        }
-
-        .itable:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-            box-shadow: 0px 0px 20px rgb(255, 136, 0),
-                0px 0px 15px rgb(255, 136, 0) inset;
-        }
-
-        .itd:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-            color: rgb(77, 255, 0);
-            box-shadow: 0px 0px 20px rgb(0, 255, 38),
-                0px 0px 15px rgb(0, 255, 55) inset;
-        }
-
-        .tdd {
-            border: 2px solid white;
-            background-image: url(image/background4.jpg);
-            background-attachment: fixed;
-            text-align: center;
-            width: 60%;
-            border-radius: 30px;
-        }
-
-        .img3 {
-            height : 400px;
-            width : 400px;
-            border-radius: 30px;
-            border-color: 0.5px solid white;
-            transition: transform 0.3s ease;
-        }
-
-        .button {
-            width: 300px;
-            height: 50px;
-            font-size: larger;
-            background-color: rgb(255, 238, 0);
-            border-radius: 30px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            transition: transform 0.3s ease;
-        }
-
-        .button:hover {
-            transform: scale(1.2);
-            background-color: rgb(33, 255, 4);
-            cursor: pointer;
-            box-shadow: 0px 0px 20px rgb(60, 255, 0),
-                0px 0px 15px rgb(60, 255, 0) inset;
-        }
-
-        .img:hover {
-            transform: scale(1.2);
-            background-color: rgb(33, 255, 4);
-            cursor: pointer;
-            box-shadow: 0px 0px 36px cyan,
-                0px 0px 15px cyan inset;
-        }
-
-        .img2:hover,.img3:hover {
-            transform: scale(1.2);
-            background-color: rgb(33, 255, 4);
-            cursor: pointer;
-            box-shadow: 0px 0px 25px rgb(255, 0, 0),
-                0px 0px 15px rgb(255, 0, 0) inset;
-        }
-
-        .p1 {
-            border-radius: 30px;
-            padding: 5px;
-            width: 99%
-        }
-
-        .form {
-            transition: transform 0.3s ease;
-        }
-
-        .form:hover {
-            transform: scale(1.2);
-            box-shadow: 0px 0px 30px rgb(201, 2, 245),
-                0px 0px 15px rgb(201, 2, 245) inset;
-        }
-
-        .video {
-            transition: transform 0.3s ease;
-            box-shadow: 0px 0px 30px rgb(255, 157, 0),
-                0px 0px 15px rgb(255, 157, 0) inset;
-        }
-
-        .video:hover {
-            transform: scale(1.2);
-            box-shadow: 0px 0px 30px rgb(255, 0, 0),
-                0px 0px 15px rgb(255, 0, 0) inset;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 
@@ -233,18 +88,36 @@
             style="border-color: #000000; box-shadow: 0px 0px 15px rgb(0, 0, 0);background-image: url(image/background3.avif); border-radius: 30px; background-attachment: fixed; padding: 5px;">
             <h1>>>> GAME PLAY</h1>
         </div>
-        <br>
 
+        <div class="slider" tabindex="0" aria-label="Infinite scrolling gallery" width="90%"
+            style="padding: 30px;">
+            <!-- IMPORTANT: duplicate the sequence of images once (so there are two identical sets).
+               The animation shifts the whole track by 50% to create a seamless loop. -->
+            <div class="track">
+                <!-- === FIRST SET === -->
+                <img src="image/ghost_tsh_p1.jpg" class="img2">
+                <img src="image/ghost_tsh_p2.jpg" class="img2">
+                <img src="image/ghost_tsh_p3.jpg" class="img2">
+                <img src="image/ghost_tsh_p4.jpg" class="img2">
+                <img src="image/ghost_tsh_p5.jpg" class="img2">
+                <img src="image/ghost_tsh_p6.jpg" class="img2">
 
-        <center>
-            <div class="p1" style="overflow: auto;">
-                <br>
-                <pre>
-            <img src="image/ghost_tsh_p1.jpg" class="img2">   <img src="image/ghost_tsh_p2.jpg" class="img2">   <img src="image/ghost_tsh_p3.jpg" class="img2">   <img src="image/ghost_tsh_p4.jpg" class="img2">   <img src="image/ghost_tsh_p5.jpg" class="img2">   <img src="image/ghost_tsh_p6.jpg" class="img2">   
-      </pre>
+                <!-- === DUPLICATE (repeat same images in same order) === -->
+                <img src="image/ghost_tsh_p1.jpg" class="img2">
+                <img src="image/ghost_tsh_p2.jpg" class="img2">
+                <img src="image/ghost_tsh_p3.jpg" class="img2">
+                <img src="image/ghost_tsh_p4.jpg" class="img2">
+                <img src="image/ghost_tsh_p5.jpg" class="img2">
+                <img src="image/ghost_tsh_p6.jpg" class="img2">
             </div>
-        </center>
+        </div>
 
+        <fieldset
+            style="background-attachment: fixed;box-shadow: 0px 0px 15px rgb(0, 0, 0); background-image: url(image/background3.avif); border: 1px solid; border-radius: 30px ;padding: 5px;">
+            <div>
+                <h1 style="color: #000000;">( SAMPLE GAME PLAY )</h1>
+            </div>
+        </fieldset>
         <br>
         <div style="border: 1px solid white;border-radius: 30px; width: 50%;position: relative;left: 25%; overflow-x: scroll; scrollbar-width: none;"
             class="video">
@@ -304,20 +177,37 @@
         </center>
         <br>
 
-        <fieldset style="box-shadow: 0px 0px 15px rgb(0, 0, 0); background-image: url(image/background3.avif); border: 1px solid; border-radius: 30px ;">
+        <fieldset
+            style="box-shadow: 0px 0px 15px rgb(0, 0, 0); background-image: url(image/background3.avif); border: 1px solid; border-radius: 30px ;">
             <div>
                 <h1 style="color: #000000;">( RECOMMENDED GAMES )</h1>
             </div>
         </fieldset>
-           
-            <div style="overflow:auto; padding: 5px; text-align: center;">
-                <br>
-                <pre><a href="gow1.html"><img src="image/gow1.jpg" class="img3"></a>  <a href="spiderman.html"><img src="image/spiderman.avif" class="img3"></a>  <a href="gow_ghost.html"><img src="image/God_of_War_Ghost_of_Sparta.webp" class="img3"></a>  <a href="gow_asc.html"><img src="image//gow_ascension.jpg" class="img3"></a>  <a href="gow3.html"><img src="image/GOW3.avif" class="img3"></a>  <a href="gow2.html"><img src="image/gow2.jpg" class="img3"></a></pre>
-                <br>
+
+        <div class="slider" tabindex="0" aria-label="Infinite scrolling gallery" width="90%"
+            style="padding: 30px;">
+            <!-- IMPORTANT: duplicate the sequence of images once (so there are two identical sets).
+               The animation shifts the whole track by 50% to create a seamless loop. -->
+            <div class="track">
+                <!-- === FIRST SET === -->
+                <a href="gow1.html"><img src="image/gow1.jpg" class="img3"></a>
+                <a href="gow2.html"><img src="image/gow2.jpg" class="img3"></a>
+                <a href="gow_asc.html"><img src="image//gow_ascension.jpg" class="img3"></a>
+                <a href="gow3.html"><img src="image/GOW3.avif" class="img3"></a>
+                <a href="gow_ghost.html"><img src="image/God_of_War_Ghost_of_Sparta.webp" class="img3"></a>
+                <a href="gow.html"><img src="image/god-of-war.jpg" class="img3"></a>
+
+                <!-- === DUPLICATE (repeat same images in same order) === -->
+                <a href="gow1.html"><img src="image/gow1.jpg" class="img3"></a>
+                <a href="gow2.html"><img src="image/gow2.jpg" class="img3"></a>
+                <a href="gow_asc.html"><img src="image//gow_ascension.jpg" class="img3"></a>
+                <a href="gow3.html"><img src="image/GOW3.avif" class="img3"></a>
+                <a href="gow_ghost.html"><img src="image/God_of_War_Ghost_of_Sparta.webp" class="img3"></a>
+                <a href="gow.html"><img src="image/god-of-war.jpg" class="img3"></a>
             </div>
-        <br>
+        </div>
 
-
+        
         <center>
             <fieldset
                 style="box-shadow: 0px 0px 15px rgb(255, 255, 255);color: aliceblue; background-image: url(image/background1.jpg); background-size: cover; border-radius: 30px; padding: 5px; background-attachment: fixed;">

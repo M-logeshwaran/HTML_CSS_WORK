@@ -1,0 +1,192 @@
+:root {
+        --speed: 20s;    /* how long it takes to move one loop */
+        --img-width: 200px; /* each image width */
+        --gap: 16px;     /* space between images */
+      }
+
+    .img {
+            border: 2px solid white;
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .form1:hover{
+            cursor: pointer;
+            color: rgb(255, 0, 0);
+            text-shadow: 0px 0px 25px rgb(255, 0, 217);
+        }
+
+        .img2 {
+            width: 500px;
+            height: 350px;
+            border: 0.5px solid white;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .itable {
+            text-align: center;
+            border-radius: 30px;
+            border: 1px solid white;
+            border-width: 80%;
+            width: 80%;
+            transition: transform 0.3s ease;
+        }
+
+        .itd {
+            padding: 20px;
+            border: 1px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .itd1 {
+            padding: 20px;
+            border: 1px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .itd1:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            color: rgb(225, 0, 255);
+            box-shadow: 0px 0px 20px rgb(221, 0, 255),
+                0px 0px 15px rgb(221, 0, 255) inset;
+        }
+
+        .itable:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgb(255, 136, 0),
+                0px 0px 15px rgb(255, 136, 0) inset;
+        }
+
+        .itd:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            color: rgb(77, 255, 0);
+            box-shadow: 0px 0px 20px rgb(0, 255, 38),
+                0px 0px 15px rgb(0, 255, 55) inset;
+        }
+
+        .tdd {
+            border: 2px solid white;
+            background-image: url(image/background4.jpg);
+            background-attachment: fixed;
+            text-align: center;
+            width: 60%;
+            border-radius: 30px;
+        }
+
+        .button {
+            width: 300px;
+            height: 50px;
+            font-size: larger;
+            background-color: rgb(255, 238, 0);
+            border-radius: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.2);
+            background-color: rgb(33, 255, 4);
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgb(60, 255, 0),
+                0px 0px 15px rgb(60, 255, 0) inset;
+        }
+
+        .img:hover {
+            transform: scale(1.2);
+            background-color: rgb(33, 255, 4);
+            cursor: pointer;
+            box-shadow: 0px 0px 36px cyan,
+                0px 0px 15px cyan inset;
+        }
+
+        .img3 {
+            height : 400px;
+            width : 400px;
+            border-radius: 30px;
+            border-color: 0.5px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .img2:hover,.img3:hover {
+            transform: scale(1.2);
+            background-color: rgb(33, 255, 4);
+            cursor: pointer;
+            box-shadow: 0px 0px 25px rgb(255, 255, 255),
+                0px 0px 15px rgb(255, 255, 255) inset;
+        }
+
+        .form {
+            transition: transform 0.3s ease;
+        }
+
+        .form:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 0px 30px rgb(201, 2, 245),
+                0px 0px 15px rgb(201, 2, 245) inset;
+        }
+
+        .video {
+            transition: transform 0.3s ease;
+            box-shadow: 0px 0px 30px rgb(255, 157, 0),
+                0px 0px 15px rgb(255, 157, 0) inset;
+        }
+
+        .video:hover {
+            transform: scale(1.2);
+            box-shadow: 0px 0px 30px rgb(255, 0, 0),
+                0px 0px 15px rgb(255, 0, 0) inset;
+        }
+
+         /* Moving track */
+       .track {
+            display: flex;
+            gap: var(--gap);
+            align-items: center;
+       /* duplicate content must be at least as wide as the container so translate by -50% works */
+            animation: scroll linear infinite;
+            animation-duration: var(--speed);
+            will-change: transform;
+        }
+
+        .track {
+            display: flex;       /* put images in a row */
+            gap: var(--gap);     /* space between */
+            animation: scroll var(--speed) linear infinite;
+        }
+
+        .slider {
+             width: 97%;          /* take full screen width */
+             overflow: hidden;     /* hide extra images outside */
+             border-radius: 0;     /* no rounded corners, optional */
+             padding: 12px 0;      /* space above and below */
+             margin: 0;            /* remove margin */
+        }
+
+
+        /* Make animation seamless by moving -50% (since we duplicate the set in HTML) */
+       @keyframes scroll {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-169%); }
+        }
+
+        /* pause on hover/focus for accessibility */
+        .slider:hover .track,
+        .slider:focus-within .track {
+              animation-play-state: paused;
+          }
+
+        /* prefer-reduced-motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .track { animation: none; }
+          }
+
+        /* Responsive tuning */
+        @media (max-width: 600px) {
+            :root { --img-width: 140px; --speed: 14s; }
+          }
